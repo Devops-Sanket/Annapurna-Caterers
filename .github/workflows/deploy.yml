@@ -38,10 +38,17 @@ jobs:
       - name: Build Vite project
         run: npm run build
 
-      - name: Verify build output
+      - name: Verify production HTML
         run: |
-          test -f dist/index.html
-          ls -la dist
+          echo "Checking production HTML..."
+          cat dist/index.html
+
+          if grep -q '/src/main.tsx' dist/index.html; then
+            echo "ERROR: Development entry point found!"
+            exit 1
+          fi
+
+          echo "Production HTML looks correct."
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
