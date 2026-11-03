@@ -7,7 +7,7 @@ import path from 'node:path';
 const rootDir = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  base: '/',
+  base: '/Annapurna-Caterers/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
