@@ -47,7 +47,6 @@ import {
 } from "./data";
 
 import NashikCanvasBackground from "./components/NashikCanvasBackground";
-import VoiceWelcome from "./components/VoiceWelcome";
 import CateringEstimator from "./components/CateringEstimator";
 import SocialMediaFooter from "./components/SocialMediaFooter";
 
@@ -179,10 +178,7 @@ export default function App() {
       {/* 1. Cinematic Nashik 3D-styled Interactive Canvas Background */}
       <NashikCanvasBackground />
 
-      {/* 2. Audio Greetings voice narrator tool */}
-      <VoiceWelcome />
-
-      {/* 3. Top Banner & Brand Hub Highlights */}
+      {/* 2. Top Banner & Brand Hub Highlights */}
       <header className="w-full text-xs font-medium bg-[#1F1710] text-[#EBE6DD] py-2 px-4 shadow-sm z-50 relative font-sans">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
           <div className="flex items-center gap-4 flex-wrap justify-center text-center">
