@@ -1418,7 +1418,7 @@ export default function App() {
                   allowFullScreen={false}
                   loading="lazy"
                   referrerPolicy="no-referrer"
-                  className="w-full h-full grayscale hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full"
                 />
               </div>
 
